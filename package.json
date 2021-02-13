@@ -1,0 +1,25 @@
+{
+  "name": "dragons-app",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Teste para Desenvolvedor(a) Web Sicredi",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thalesGog/dragons-app.git"
+  },
+  "keywords": [
+    "Desafio Técnico",
+    "Teste para Desenvolvedor",
+    "React",
+    "NextJS",
+    "Sicredi",
+    "Frontend",
+    "Desenvolvimento Web"
+  ],
+  "author": "Thales Nunes da Silva",
+  "bugs": {
+    "url": "https://github.com/thalesGog/dragons-app/issues"
+  },
+  "homepage": "https://github.com/thalesGog/dragons-app#readme"
+}
