@@ -6,18 +6,7 @@ const options: InitOptions = {
   providers: [
     Providers.Credentials({
       name: 'Login',
-      credentials: {
-        username: {
-          label: 'Username',
-          type: 'text',
-          placeholder: 'Type your username',
-        },
-        password: {
-          label: 'Password',
-          type: 'password',
-          placeholder: 'Type your password',
-        },
-      },
+      credentials: {},
       async authorize(credentials) {
         const user = {
           id: 1,
@@ -32,6 +21,9 @@ const options: InitOptions = {
       },
     }),
   ],
+  pages: {
+    signIn: '/login',
+  },
 }
 
 export default (req: NextApiRequest, res: NextApiResponse): Promise<void> =>
