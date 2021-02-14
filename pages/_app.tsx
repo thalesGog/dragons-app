@@ -1,18 +1,27 @@
-import App from 'next/app'
-import {AppProps, AppContext} from 'next/app'
+import {AppProps} from 'next/app'
 import {Provider} from 'next-auth/client'
+import {createGlobalStyle, ThemeProvider} from 'styled-components'
+import theme from '../theme'
 
-function MyApp({Component, pageProps}: AppProps): JSX.Element {
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ${({theme}) => theme.fontFamily};
+    color: ${({theme}) => theme.colors.primary};
+  }
+`
+
+const MyApp = ({Component, pageProps}: AppProps): JSX.Element => {
   return (
     <Provider session={pageProps?.session}>
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+        <GlobalStyle />
+      </ThemeProvider>
     </Provider>
   )
-}
-
-MyApp.getInitialProps = async (appContext: AppContext) => {
-  const appProps = await App.getInitialProps(appContext)
-  return {...appProps}
 }
 
 export default MyApp
