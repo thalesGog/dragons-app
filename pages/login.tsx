@@ -36,6 +36,7 @@ const LoginPage: NextPage = () => {
             type="text"
             placeholder="Digite seu usuário"
             onChange={handleInputChange}
+            required
           />
         </label>
         <label>
@@ -45,6 +46,7 @@ const LoginPage: NextPage = () => {
             type="password"
             placeholder="Digite sua senha"
             onChange={handleInputChange}
+            required
           />
         </label>
         <Button type="submit">Entrar</Button>

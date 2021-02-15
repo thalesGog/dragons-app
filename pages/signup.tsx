@@ -12,8 +12,12 @@ const SignUpPage: NextPage = () => {
     username: '',
     password: '',
   })
-  const handleSubmit = (e: FormEvent): void => {
+  const handleSubmit = async (e: FormEvent): Promise<void> => {
     e.preventDefault()
+    await fetch('api/users', {
+      method: 'POST',
+      body: JSON.stringify(form),
+    })
     signIn('credentials', {...form})
   }
 
@@ -33,21 +37,45 @@ const SignUpPage: NextPage = () => {
         <h1>Cadastre seu usuário</h1>
         <label>
           Nome
-          <input name="name" type="text" onChange={handleInputChange} />
+          <input
+            name="name"
+            type="text"
+            placeholder="Digite seu nome"
+            onChange={handleInputChange}
+            required
+          />
         </label>
         <label>
           E-mail
-          <input name="email" type="email" onChange={handleInputChange} />
+          <input
+            name="email"
+            type="email"
+            placeholder="Digite seu e-mail"
+            onChange={handleInputChange}
+            required
+          />
         </label>
         <label>
           Usuário
-          <input name="username" type="text" onChange={handleInputChange} />
+          <input
+            name="username"
+            type="text"
+            placeholder="Digite o usuário"
+            onChange={handleInputChange}
+            required
+          />
         </label>
         <label>
           Senha
-          <input name="password" type="password" onChange={handleInputChange} />
+          <input
+            name="password"
+            type="password"
+            placeholder="Digite a senha"
+            onChange={handleInputChange}
+            required
+          />
         </label>
-        <Button type="submit">Sign up</Button>
+        <Button type="submit">Cadastrar</Button>
       </Form>
     </Layout>
   )

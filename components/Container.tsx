@@ -7,7 +7,6 @@ const Container = styled.main`
   height: 100vh;
   padding-left: 8px;
   padding-right: 8px;
-  display: flex;
 `
 
 export default Container
