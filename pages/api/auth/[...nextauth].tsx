@@ -1,4 +1,4 @@
-import {readFile} from 'fs/promises'
+import {promises} from 'fs'
 import {NextApiRequest, NextApiResponse} from 'next'
 import NextAuth, {InitOptions} from 'next-auth'
 import Providers from 'next-auth/providers'
@@ -9,7 +9,7 @@ const options: InitOptions = {
       name: 'Login',
       credentials: {},
       async authorize({username, password}) {
-        const data = await readFile('./fakeDB.json')
+        const data = await promises.readFile('./fakeDB.json')
         const users = JSON.parse(data.toString())
         const fakeUserFind = users.find(
           (user: {username: string; password: string}) =>
