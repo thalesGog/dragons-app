@@ -1,6 +1,6 @@
 {
   "name": "dragons-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Teste para Desenvolvedor(a) Web Sicredi",
   "scripts": {
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/thalesGog/dragons-app#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "next": "^10.0.6",
     "next-auth": "^3.4.1",
     "react": "^17.0.1",
