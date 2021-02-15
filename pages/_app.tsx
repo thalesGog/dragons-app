@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: ${({theme}) => theme.fontFamily};
     color: ${({theme}) => theme.colors.primary};
+    background-color: ${({theme}) => theme.backgroundColor};
   }
 `
 
