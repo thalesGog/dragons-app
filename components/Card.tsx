@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Item = styled.div`
+const Card = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -13,19 +13,11 @@ const Item = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: all 300ms ease 0s;
-  a {
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: ${({theme}) => theme.colors.secondary};
-    margin-top: 8px;
-  }
-  hr {
-    width: 100%;
-  }
-  &:hover {
-    box-shadow: 4px 8px ${({theme}) => theme.colors.primary};
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  p,
+  h3 {
+    margin: 8px;
   }
 `
 
-export default Item
+export default Card

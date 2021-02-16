@@ -31,6 +31,7 @@
   "homepage": "https://github.com/thalesGog/dragons-app#readme",
   "dependencies": {
     "axios": "^0.21.1",
+    "date-fns": "^2.17.0",
     "next": "^10.0.6",
     "next-auth": "^3.4.1",
     "react": "^17.0.1",

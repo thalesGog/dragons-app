@@ -20,6 +20,7 @@ const IndexPage = ({dragons}: Props): JSX.Element => {
           <Item key={dragon.id}>
             #{dragon.id} - {dragon.name}
             <hr />
+            <Link href={`/dragon/${dragon.id}`}>Detalhes</Link>
             <Link href="/">Editar</Link>
             <a href="/">Excluir</a>
           </Item>
