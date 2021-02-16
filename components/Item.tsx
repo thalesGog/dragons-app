@@ -14,11 +14,16 @@ const Item = styled.div`
   text-overflow: ellipsis;
   white-space: nowrap;
   transition: all 300ms ease 0s;
-  a {
+  a,
+  span {
     font-size: 0.9rem;
     text-decoration: none;
     color: ${({theme}) => theme.colors.secondary};
     margin-top: 8px;
+    cursor: pointer;
+    &:hover {
+      font-weight: 600;
+    }
   }
   hr {
     width: 100%;

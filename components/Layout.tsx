@@ -25,6 +25,7 @@ const Layout = ({children, title = 'Dragons App'}: Props): JSX.Element => {
       </Head>
       {session && (
         <Navbar>
+          <img src="/logo.png" alt="Dragon's Logo" />
           <ul>
             <Link href="/">
               <li>Início</li>

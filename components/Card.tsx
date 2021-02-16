@@ -13,7 +13,7 @@ const Card = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-bottom: 1px solid #10162f;
   p,
   h3 {
     margin: 8px;

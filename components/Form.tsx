@@ -8,7 +8,7 @@ const Form = styled.form`
   justify-content: center;
   width: 100%;
   height: 100%;
-  transform: translateY(50%);
+  transform: translateY(40%);
   a,
   label,
   input,
@@ -19,6 +19,9 @@ const Form = styled.form`
     color: ${({theme}) => theme.colors.primary};
     text-decoration: none;
     font-weight: 600;
+    &:hover {
+      color: ${({theme}) => theme.colors.secondary};
+    }
   }
   button {
     margin-top: 18px;

@@ -1,9 +1,11 @@
 import {GetServerSideProps} from 'next'
 import {getSession} from 'next-auth/client'
+import {useRouter} from 'next/dist/client/router'
 import Link from 'next/link'
 import Item from '../components/Item'
 import Layout from '../components/Layout'
 import {Dragon} from '../interfaces'
+import {dragonDelete} from '../services/dragonDelete'
 import {dragonList} from '../services/dragonList'
 
 type Props = {
@@ -11,6 +13,11 @@ type Props = {
 }
 
 const IndexPage = ({dragons}: Props): JSX.Element => {
+  const {push} = useRouter()
+  const handleDeleteDragon = async (id: number): Promise<void> => {
+    dragonDelete(id)
+    push('/')
+  }
   return (
     <Layout title="Listagem de Dragões">
       <h1>Dragões</h1>
@@ -20,9 +27,9 @@ const IndexPage = ({dragons}: Props): JSX.Element => {
           <Item key={dragon.id}>
             {dragon.name}
             <hr />
-            <Link href={`/dragon/${dragon.id}`}>Detalhes</Link>
-            <Link href="/">Editar</Link>
-            <a href="/">Excluir</a>
+            <Link href={`/dragon/details/${dragon.id}`}>Detalhes</Link>
+            <Link href={`/dragon/edit/${dragon.id}`}>Editar</Link>
+            <span onClick={() => handleDeleteDragon(dragon.id)}>Excluir</span>
           </Item>
         ))}
     </Layout>
