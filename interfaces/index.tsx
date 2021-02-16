@@ -1,6 +1,6 @@
 export type Dragon = {
-  id: number
+  id?: number
   name: string
   type: string
-  createdAt: string
+  createdAt?: string
 }
