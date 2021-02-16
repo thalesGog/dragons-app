@@ -32,6 +32,9 @@ const Navbar = styled.nav`
       color: ${({theme}) => theme.colors.secondary};
     }
   }
+  img {
+    padding-top: 8px;
+  }
 `
 
 export default Navbar

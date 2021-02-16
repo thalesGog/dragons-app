@@ -6,7 +6,7 @@ const Container = styled.main`
   text-align: center;
   padding-left: 8px;
   padding-right: 8px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 `
 
 export default Container

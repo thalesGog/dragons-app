@@ -1,10 +1,10 @@
 import {GetServerSideProps} from 'next'
 import {getSession} from 'next-auth/client'
 import {format, parseISO} from 'date-fns'
-import Card from '../../components/Card'
-import Layout from '../../components/Layout'
-import {Dragon} from '../../interfaces'
-import {dragonDetails} from '../../services/dragonDetails'
+import Card from '../../../components/Card'
+import Layout from '../../../components/Layout'
+import {Dragon} from '../../../interfaces'
+import {dragonDetails} from '../../../services/dragonDetails'
 
 type Props = {
   dragon: Dragon
