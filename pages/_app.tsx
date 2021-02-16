@@ -12,6 +12,9 @@ const GlobalStyle = createGlobalStyle`
     color: ${({theme}) => theme.colors.primary};
     background-color: ${({theme}) => theme.backgroundColor};
   }
+  html, body, #__next {
+    height: 100%;
+  }
 `
 
 const MyApp = ({Component, pageProps}: AppProps): JSX.Element => {

@@ -7,7 +7,8 @@ const Form = styled.form`
   margin: 0 auto;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  transform: translateY(50%);
   a,
   label,
   input,

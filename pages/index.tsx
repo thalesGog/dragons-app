@@ -18,7 +18,7 @@ const IndexPage = ({dragons}: Props): JSX.Element => {
         .sort((a, b) => a.name.localeCompare(b.name))
         .map(dragon => (
           <Item key={dragon.id}>
-            #{dragon.id} - {dragon.name}
+            {dragon.name}
             <hr />
             <Link href={`/dragon/${dragon.id}`}>Detalhes</Link>
             <Link href="/">Editar</Link>
