@@ -47,4 +47,4 @@ Formata automaticamente os arquivos através da configuração do `.prettierrc`.
 
 ### `npm run test`
 
-Comando para rodar os teste unitários.
+Comando para rodar os testes unitários.
