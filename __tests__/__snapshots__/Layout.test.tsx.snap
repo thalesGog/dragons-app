@@ -84,7 +84,9 @@ exports[`Render Layout component 1`] = `
         Criar
       </li>
     </ul>
-    <span>
+    <span
+      role="button"
+    >
       Sair
     </span>
   </nav>
