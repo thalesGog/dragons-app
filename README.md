@@ -25,7 +25,7 @@ No diretório do projeto, você pode executar:
 ### `npm run dev`
 
 Roda o projeto em modo de desenvolvimento<br /> Abra
-[http://localhost:3000](http://localhost:3000) para vizualizá-lo no navegador.
+[http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
 ### `npm run build`
 
