@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Form component 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(40%);
+  -ms-transform: translateY(40%);
+  transform: translateY(40%);
+}
+
+.c0 a,
+.c0 label,
+.c0 input,
+.c0 button {
+  padding: 6px 0 6px 0;
+}
+
+.c0 a {
+  color: #10162f;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.c0 a:hover {
+  color: #3a10e5;
+}
+
+.c0 button {
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+
+.c0 input {
+  margin-top: 8px;
+  font-size: 1rem;
+  text-indent: 0.8rem;
+  padding: 0.8rem 0;
+  outline: none;
+  width: 100%;
+  border: 1px solid #dddce0;
+  border-radius: 2px;
+  -webkit-transition: border-color 0.15s;
+  transition: border-color 0.15s;
+  font-weight: 400;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.c0 label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 img {
+  max-width: 70px;
+  margin: 0 auto;
+}
+
+<div>
+  <form
+    class="c0"
+  />
+</div>
+`;

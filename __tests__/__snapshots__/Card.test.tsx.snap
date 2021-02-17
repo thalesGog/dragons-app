@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Card component 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 0.125rem;
+  background: #fff;
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-bottom: 1px solid #10162f;
+}
+
+.c0 p,
+.c0 h3 {
+  margin: 8px;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;

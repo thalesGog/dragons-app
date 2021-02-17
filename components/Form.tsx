@@ -16,11 +16,11 @@ const Form = styled.form`
     padding: 6px 0 6px 0;
   }
   a {
-    color: ${({theme}) => theme.colors.primary};
+    color: ${({theme}) => theme?.colors?.primary};
     text-decoration: none;
     font-weight: 600;
     &:hover {
-      color: ${({theme}) => theme.colors.secondary};
+      color: ${({theme}) => theme?.colors?.secondary};
     }
   }
   button {

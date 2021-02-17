@@ -34,7 +34,9 @@ const Layout = ({children, title = 'Dragons App'}: Props): JSX.Element => {
               <li>Criar</li>
             </Link>
           </ul>
-          <span onClick={logout}>Sair</span>
+          <span role="button" onClick={logout}>
+            Sair
+          </span>
         </Navbar>
       )}
 

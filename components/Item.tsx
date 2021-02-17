@@ -18,7 +18,7 @@ const Item = styled.div`
   span {
     font-size: 0.9rem;
     text-decoration: none;
-    color: ${({theme}) => theme.colors.secondary};
+    color: ${({theme}) => theme?.colors?.secondary};
     margin-top: 8px;
     cursor: pointer;
     &:hover {
@@ -29,7 +29,7 @@ const Item = styled.div`
     width: 100%;
   }
   &:hover {
-    box-shadow: 4px 8px ${({theme}) => theme.colors.primary};
+    box-shadow: 4px 8px ${({theme}) => theme?.colors?.primary};
   }
 `
 
