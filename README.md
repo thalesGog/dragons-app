@@ -16,7 +16,7 @@ remover e alterar as informações dos dragões.
 
 #### Página com os detalhes de um dragão específico:
 
-Data de criação; Nome; Tipo. Uma página para cadastro de dragões:
+Data de criação; Nome; Tipo. Uma página para cadastro de dragões.
 
 ## Scripts Disponíveis
 
@@ -34,7 +34,7 @@ Builda o projeto para produção na pasta `.next`.
 ### `npm run start`
 
 Roda um servidor local através do build de produção. Abra
-[http://localhost:3000](http://localhost:3000) para vizualizá-lo no navegador.
+[http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
 ### `npm run lint`
 
@@ -48,3 +48,7 @@ Formata automaticamente os arquivos através da configuração do `.prettierrc`.
 ### `npm run test`
 
 Comando para rodar os testes unitários.
+
+### `npm run test:coverage`
+
+Roda a análise de cobertura de código do projeto.
