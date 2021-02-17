@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Navbar component 1`] = `
+.c0 {
+  border-bottom: 1px solid #10162f;
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 4px;
+}
+
+.c0 ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 ul li {
+  padding: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.c0 ul li:hover {
+  color: #3a10e5;
+}
+
+.c0 span {
+  cursor: pointer;
+}
+
+.c0 span:hover {
+  color: #3a10e5;
+}
+
+.c0 img {
+  padding-top: 8px;
+}
+
+<div>
+  <nav
+    class="c0"
+  />
+</div>
+`;
