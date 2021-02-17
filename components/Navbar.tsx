@@ -22,14 +22,14 @@ const Navbar = styled.nav`
       text-transform: uppercase;
       font-weight: 600;
       &:hover {
-        color: ${({theme}) => theme.colors.secondary};
+        color: ${({theme}) => theme?.colors?.secondary};
       }
     }
   }
   span {
     cursor: pointer;
     &:hover {
-      color: ${({theme}) => theme.colors.secondary};
+      color: ${({theme}) => theme?.colors?.secondary};
     }
   }
   img {
